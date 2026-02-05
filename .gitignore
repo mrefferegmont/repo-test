@@ -38,6 +38,9 @@ ScaffoldingReadMe.txt
 *.nupkg
 **/packages/*
 
+# wwwroot/lib - client-side libraries
+**/wwwroot/lib/
+
 # Others
 *.log
 *.cache
