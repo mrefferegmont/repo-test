@@ -19,6 +19,41 @@ html {
 
 body {
   margin-bottom: 60px;
+  transition: background-color 0.3s ease;
+}
+
+/* Light theme (default) */
+body.light-theme {
+  background-color: #ffffff;
+  color: #212529;
+}
+
+/* Dark theme */
+body.dark-theme {
+  background-color: #212529;
+  color: #ffffff;
+}
+
+body.dark-theme .navbar.navbar-light {
+  background-color: #343a40;
+}
+
+body.dark-theme .navbar-light .navbar-brand,
+body.dark-theme .navbar-light .nav-link {
+  color: #ffffff;
+}
+
+body.dark-theme .table {
+  color: #ffffff;
+}
+
+body.dark-theme .table-striped tbody tr:nth-of-type(odd) {
+  background-color: rgba(255, 255, 255, 0.05);
+}
+
+body.dark-theme .footer {
+  background-color: #343a40;
+  color: #ffffff;
 }
 
 .form-floating > .form-control-plaintext::placeholder, .form-floating > .form-control::placeholder {
